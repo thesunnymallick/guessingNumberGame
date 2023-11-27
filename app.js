@@ -2,7 +2,7 @@
   // random number genarate
   let randomNumber= parseInt(Math.random()*100+1)
  
-console.log(randomNumber)
+
   // select the dom
 
   const userInput=document.getElementById('userInput');
@@ -59,7 +59,7 @@ console.log(randomNumber)
             PreviousGuessSolt.push(guess);
             if(limtGuess===10){
              upadteGuess(guess);
-             displayMessage(`Game Over ! Random number was ${guess}`)
+             displayMessage(`Game Over ! Random number was ${randomNumber}`)
              endGame();
             }else{
             upadteGuess(guess);
